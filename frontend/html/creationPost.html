@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulaire HTML</title>
+</head>
+<body>
+
+  <div id="listPost"></div>
+
+	<h2>Créer un nouveau post</h2>
+
+    <form>
+        <label for="title">Titre :</label>
+        <input type="text" id="title" name="title"><br><br>
+        
+        <label for="content">Contenu :</label>
+        <textarea id="content" name="content"></textarea><br><br>
+        
+        <label for="username">Nom d'utilisateur :</label>
+        <input type="text" id="username" name="username"><br><br>
+        
+        <button type="button" onclick="submitForm()">Envoyer</button>
+      </form>
+      <script src="../js/creationPost.js"></script>
+</body>
+</html>

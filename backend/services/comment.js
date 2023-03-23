@@ -31,11 +31,11 @@ async function getComment(comment){
 
 /* Créer un comment */
 async function createComment(comment){
-  const currentDate = new Date()
+  const currentDate = getDate()
   const id = getLastId()
   const result = await db.query(
     `INSERT INTO comment (id, contenu, date_de_commentaire, nom_utilisateur, post_id)
-    VALUES ('${id + 1}', '${comment.content}', '${currentDate}','${comment.name}', '${comment.post_id}');`
+    VALUES ("${id + 1}", "${comment.content}", "${currentDate}", "${comment.name}", "${comment.post_id}");`
   )
 
   let message = 'Error in creating comment';
@@ -57,6 +57,24 @@ async function getLastId() {
   } else {
     return 0;
   }
+}
+
+function getDate(){
+  const date = new Date();
+  
+  // Utilisez toLocaleString pour récupérer une version formatée de la date et de l'heure
+  const formattedDate = date.toLocaleString();
+  
+  // Extraire les différentes parties de la chaîne de caractères formatée
+  const day = formattedDate.slice(0, 2);
+  const month = formattedDate.slice(3, 5);
+  const year = formattedDate.slice(6, 10);
+  const time = formattedDate.slice(12, 20);
+  
+  // Créer la chaîne de caractères finale au format "YYYY-MM-DD HH:MM:SS"
+  const formattedString = `${year}-${month}-${day} ${time}`;
+  
+  return formattedString
 }
 
 module.exports = {

@@ -1,4 +1,5 @@
 const listOfPost = document.getElementById("listOfPost")
+console.log(new Date())
 
 //AFFICHAGE DES POSTS
 fetch("http://localhost:3000/api/getPosts")
@@ -55,6 +56,8 @@ function submitForm() {
     })
     .then(response => {
       console.log(response);
+      alert("Post bien envoyé !")
+      location.reload();
     })
     .catch(error => {
       console.error(error);

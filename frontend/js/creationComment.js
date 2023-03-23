@@ -66,6 +66,8 @@ function submitForm() {
     })
     .then(response => {
       console.log(response);
+      alert("Commentaire bien envoyé !")
+      location.reload();
     })
     .catch(error => {
       console.error(error);

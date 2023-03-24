@@ -12,10 +12,10 @@ fetch(urlFetchPost)
   .then(data => {
     const comment = data.data[0];
     postDiv.innerHTML = `
-      <h2>${comment.titre}</h2>
-      <p>${comment.contenu}</p>
-      <p>Date de publication : ${comment.date_de_publication}</p>
-      <p>Nom d'utilisateur : ${comment.nom_utilisateur}</p>
+      <h2><b>Titre:</b> ${comment.titre}</h2>
+      <p><b>Contenu:</b> ${comment.contenu}</p>
+      <p><b>Date de publication:</b> ${comment.date_de_publication}</p>
+      <p><b>Nom d'utilisateur:</b> ${comment.nom_utilisateur}</p>
     `;
   })
   .catch(error => {
@@ -35,7 +35,7 @@ fetch(urlFetchComment)
 
     comments.forEach(comment => {
       const li = document.createElement('li');
-      li.innerText = `${comment.nom_utilisateur} - ${comment.contenu}`;
+      li.innerHTML = `<p><b>${comment.nom_utilisateur}</b> - ${comment.contenu}</p>`;
       ul.appendChild(li);
     });
   } else {

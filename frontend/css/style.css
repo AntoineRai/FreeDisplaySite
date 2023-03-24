@@ -1,3 +1,13 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+/* STYLE HEADER */
 header {
   background-color: white;
   display: flex;
@@ -26,8 +36,261 @@ nav li:first-child {
 nav a {
   text-decoration: none;
   color: black;
-  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+nav a:hover{
+  text-decoration: none;
+  color: red;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* BODY MAIN*/
+
+.main img {
+    width: 100%;
+}
+
+/* BODY SAV*/
+
+#listPost {
+  text-align: center;
+}
+
+#listPost button {
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form {
+  background: linear-gradient(to right, #1B118E, #FF8236);
+  padding: 50px;
+}
+
+form{
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+form h2 {
+  text-align: center;
+  color: #000;
+}
+
+label {
+  font-weight: bold;
+  color: red;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  background-color: #e6e6e5;
+}
+
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  background-color: #e6e6e5;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  background-color: #e6e6e5;
+}
+
+button[type="button"] {
+  background-color: red;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="button"]:hover {
+  background-color: #cc0000;
+}
+
+#listPost div {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #e6e6e5;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-top: 30px;
+}
+
+.separator {
+  background: linear-gradient(to right, #1B118E, #FF8236);
+  padding-top: 20px;
+  margin-top: 50px;
+}
+
+#post {
+  text-align: center;
+}
+
+.commentaire {
+  text-decoration: none;
+  text-align: center;
+}
+
+.commentaire li {
+  list-style: none;
+}
+
+.FAQ {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: linear-gradient(to right, #1B118E, #FF8236);
+}
+
+.FAQ .title {
+  padding-left: 100px;
+  font-weight: bold;
+  font-size: larger;
+  color: #fff;
+}
+
+.FAQ .questions {
+  padding-left: 0px;
+}
+
+.FAQ .questions li {
+  list-style: none;
+  background-color: #FFF;
+  margin-bottom: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  color: red;
+  font-weight: 600;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.info-social {
+  text-align: center;
+}
+
+.info-social img {
+  width: 50px;
+  padding-right: 20px;
+}
+
+.PGW {
+  margin: 0 auto;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #FFF;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin-top: 25px;
+  padding: 25px;
+}
+
+.PGW-Info {
+  flex: 1;
+  align-self: center;
+}
+
+.PGW-Img {
+  flex: 1;
+  text-align: right;
+}
+
+
+
+/* STYLE FOOTER */
+footer {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo img {
+  width:100px;
+  height: auto;
+}
+
+.footer-social img {
+  width: 35px;
+}
+
+.footer-pages ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column; /* Ajouter cette propriété pour afficher les éléments verticalement */
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-social ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Ajouter cette propriété pour centrer le texte avec les images */
+}
+
+.footer-pages li {
+  margin: 0 10px;
+}
+
+.footer-pages a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-pages a:hover {
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-social li {
+  margin: 0 10px;
+}
+
+.footer-social a {
+  color: #000;
+  text-decoration: none;
 }

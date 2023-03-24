@@ -13,6 +13,7 @@ fetch("http://localhost:3000/api/getPosts")
         const user = document.createElement('p');
         const date = document.createElement('p');
         const button = document.createElement('button');
+        const br = document.createElement('br');
 
         title.innerText = post.titre;
         content.innerText = post.contenu;
@@ -27,7 +28,8 @@ fetch("http://localhost:3000/api/getPosts")
         postContainer.appendChild(content);
         postContainer.appendChild(user);
         postContainer.appendChild(date);
-        postContainer.appendChild(button)
+        postContainer.appendChild(button);
+        postContainer.appendChild(br);
 
         listPost.appendChild(postContainer);
     });

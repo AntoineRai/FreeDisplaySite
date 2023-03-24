@@ -11,8 +11,7 @@
     </div>
     <nav>
       <ul>
-        <li><a href="offre.html">L'offre</a></li>
-        <li><a href="retrouver.html">Où nous retrouver ?</a></li>
+        <li><a href="index.html">L'offre</a></li>
         <li><a href="creationPost.html">SAV</a></li>
         <li><a href="faq.html">FAQ</a></li>
         <li><a href="contact.html">Nous contacter</a></li>
@@ -22,19 +21,46 @@
 
   <div id="post"></div>
 
+  <div class="commentaire">
+  <h2>Commentaire:</h2>
   <div id="comment"></div>
+</div>
 
-  <h2>Créer un nouveau commentaire</h2>
+  <br>
 
+  <div class="form">
     <form>
+      <h2>Créer un nouveau commentaire</h2>
         <label for="content">Contenu :</label>
-        <input type="text" id="content" name="content"><br><br>
+        <input type="text" id="content" name="content" placeholder="Ex: Je pense que vous devriez faire..."><br><br>
         
         <label for="username">Nom d'utilisateur :</label>
-        <input type="text" id="username" name="username"><br><br>
+        <input type="text" id="username" name="username" placeholder="Ex: Jean Pierre"><br><br>
         
         <button type="button" onclick="submitForm()">Envoyer</button>
       </form>
+    </div>
       <script src="../js/creationComment.js"></script>
+
+      <footer>
+        <div class="footer-logo">
+          <a href="index.html"><img src="../images/LOGO.png" alt="Logo"></a>
+        </div>
+        <div class="footer-pages">
+          <ul>
+            <li><a href="index.html">L'offre</a></li>
+            <li><a href="creationPost.html">SAV</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Nous contacter</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <ul>
+            <li><a href="#"><img src="../images/youtube.png"></a> Free Gaming</li>
+            <li><a href="#"><img src="../images/instagram.png"></a> free.gaming.fr</li>
+            <li><a href="#"><img src="../images/facebook.png"></a> Free Gaming</li>
+          </ul>
+        </div>
+      </footer>
 </body>
 </html>
